@@ -1,5 +1,5 @@
 pipeline {
-  agent none
+  agent any
   stages {
     stage('Stage 1') {
       parallel {
@@ -19,7 +19,7 @@ docker run --name helloworld -p 1337:1337 helloworld:$BUILD_NUMBER node /var/www
         }
       }
     }
-    stage('') {
+    stage('error') {
       steps {
         echo 'All Done!!!'
       }

@@ -19,7 +19,7 @@ docker run --name helloworld -p 1337:1337 helloworld:$BUILD_NUMBER node /var/www
         }
       }
     }
-    stage('error') {
+    stage('Last') {
       steps {
         echo 'All Done!!!'
       }
